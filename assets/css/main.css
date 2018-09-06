@@ -283,7 +283,7 @@ ul li {
 .navbar-toggle {
   border: 0;
   border-radius: 0;
-  margin-top: 2px;
+  margin-top: 15px;
 }
 .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -311,6 +311,12 @@ ul li {
 }
 .site-branding .logo:focus, .site-branding .logo:hover {
   text-decoration: none;
+}
+
+.logo-small {
+  height: 40px;
+  background-color: grey;
+  border-radius: 10px;
 }
 
 /* 

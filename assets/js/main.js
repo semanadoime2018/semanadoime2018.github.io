@@ -15,9 +15,11 @@ function handleTopNavAnimation() {
 
 	if(top>10){
 		$('#site-nav').addClass('navbar-solid'); 
+    $('img.logo').addClass('logo-small');
 	}
 	else{
 		$('#site-nav').removeClass('navbar-solid'); 
+    $('img.logo').removeClass('logo-small');
 	}
 }
 
