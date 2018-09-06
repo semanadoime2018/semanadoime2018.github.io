@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/w3.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
@@ -371,10 +372,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Event Schedule</h3>
+                    <h3 class="section-title">AGENDA</h3>
                 </div>
             </div>
-            <div class="row">
+            
+            <!-- OLD FORMAT
+                good to get template colors -->
+            <!--div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="schedule-box">
                         <div class="time">
@@ -402,8 +406,175 @@
                         <p>Mustafizur Khan, SD Asia</p>
                     </div>
                 </div>
+            </div-->
+            
+            <div class="w3-container" id="menu">
+                <div class="w3-content">
+            
+                    <div class="w3-row w3-center w3-card w3-padding">
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'dia-1');" id="myLink">
+                        <div class="w3-col s3 tablink">16/10<br>Terça-feira</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'dia-2');">
+                        <div class="w3-col s3 tablink">17/10<br>Quarta-feira</div>
+                        </a>
+                    	<a href="javascript:void(0)" onclick="openMenu(event, 'dia-3');">
+                        <div class="w3-col s3 tablink">18/10<br>Quinta-feira</div>
+                        </a>
+                    	<a href="javascript:void(0)" onclick="openMenu(event, 'dia-4');">
+                        <div class="w3-col s3 tablink">19/10<br>Sexta-feira</div>
+                        </a>			
+                    </div>
+                    
+                    <div id="dia-1" class="w3-container menu w3-padding-48 w3-card">
+                        <h5>Abertura</h5>
+                    	<h6>9:30h - 10:30h</h6>
+                        <p class="w3-text-grey">[palestrantes] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        
+                        <h5>Mau uso de Big Data</h5>
+                    	<h6>10:30h - 11:30h</h6>
+                        <p class="w3-text-grey">Media Lab (UFRJ) - [local]<br>[mesa redonda] [descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        
+                        <h5>PAUSA PARA ALMOÇO *rever</h5>
+                    	<h6>11:30h - 12:45h</h6>
+                        <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+                        	
+                    	<h5>Rodada de negócios</h5>
+                    	<h6>13:00h - 18:00h</h6>
+                    	<p class="w3-text-grey">Marinilza - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                    </div>
+                    
+                    <div id="dia-2" class="w3-container menu w3-padding-48 w3-card">
+                        <h5>Título da palestra</h5>
+                    	<h6>9:30h - 10:30h</h6>
+                        <p class="w3-text-grey">Vitor Nazário - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        
+                        <h5>Difusão da Ciência</h5>
+                    	<h6>10:30h - 11:30h</h6>
+                        <p class="w3-text-grey">Luiz Bevilocqua (UFABC) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        
+                        <h5>PAUSA PARA ALMOÇO</h5>
+                    	<h6>11:30h - 12:45h</h6>
+                        <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+                        	
+                        	<div id="paralelo">
+                        		<div id="par-half">
+                        			<h5>Wikipedia</h5>
+                        			<h6>13:00h - 14:30h</h6>
+                        			<p class="w3-text-grey">Rodrigo - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        			
+                        			<h5>CCOMP</h5>
+                        			<h6>14:30h - 16:00h</h6>
+                        			<p class="w3-text-grey">[nome do palestrante] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        			
+                        			<h5>LANCHE</h5>
+                        			<h6>16:00h - 16:30h</h6>
+                        			<p class="w3-text-grey">[local de onde ocorrerá o coffee-break]</p><br>
+                        			
+                        			<h5>SP - Gr</h5>
+                        			<h6>16:30h - 18:00h</h6>
+                        			<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        		</div>
+                        		
+                        		<div id="par-half">
+                        			<h5>Maratona de Matemática</h5>
+                        			<h6>13:00h - 18:00h</h6>
+                        			<p class="w3-text-grey">Raphael - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        		</div>
+                        	</div>
+                        	
+                        	<h5>Índices de Pobreza</h5>
+                        	<h6>18:30h - 19:30h</h6>
+                        <p class="w3-text-grey">Denise Silva (ENCE) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                    </div>
+                    
+            	    <div id="dia-3" class="w3-container menu w3-padding-48 w3-card">
+                        <h5>Título da palestra</h5>
+                    	<h6>9:30h - 10:30h</h6>
+                        <p class="w3-text-grey">João Thompson - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        
+                        <h5>Título da palestra</h5>
+                    	<h6>10:30h - 11:30h</h6>
+                        <p class="w3-text-grey">Jony (UNICAMP) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        
+                        <h5>PAUSA PARA ALMOÇO</h5>
+                    	<h6>11:30h - 12:45h</h6>
+                        <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+                        	
+                        	<div id="paralelo">
+                        		<div id="par-half">
+                        			<h5>Origami</h5>
+                        			<h6>13:00h - 14:30h</h6>
+                        			<p class="w3-text-grey">Passaroni - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        			
+                        			<h5>Estatística em R</h5>
+                        			<h6>14:30h - 16:00h</h6>
+                        			<p class="w3-text-grey">[nome do palestrante] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        			
+                        			<h5>LANCHE</h5>
+                        			<h6>16:00h - 16:30h</h6>
+                        			<p class="w3-text-grey">[local de onde ocorrerá o coffee-break]</p><br>
+                        			
+                        			<h5>SP - PG</h5>
+                        			<h6>16:30h - 18:00h</h6>
+                        			<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        		</div>
+                        		
+                        		<div id="par-half">
+                        			<h5>Maratona de Programação</h5>
+                        			<h6>13:00h - 18:00h</h6>
+                        			<p class="w3-text-grey">Paulo - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        		</div>
+                        	</div>
+                        	
+                        	<h5>Desigualdade de Renda</h5>
+                        	<h6>18:30h - 19:30h</h6>
+                        <p class="w3-text-grey">Pedro Luiz Silva (ENCE) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                    </div>
+            		
+            	    <div id="dia-4" class="w3-container menu w3-padding-48 w3-card">
+                        <h5>Sistemas dinâmicos</h5>
+                    	<h6>9:30h - 10:30h</h6>
+                        <p class="w3-text-grey">Nivaldo (ICMC - USP) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        
+                        <h5>Projeto de difusão científica</h5>
+                    	<h6>10:30h - 11:30h</h6>
+                        <p class="w3-text-grey">Mellayel (CBPF) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        
+                        <h5>PAUSA PARA ALMOÇO *rever</h5>
+                    	<h6>11:30h - 12:45h</h6>
+                        <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+                        	
+                        	<div id="paralelo">
+                        		<div id="par-third">
+                        			<h5>Ciência para os curiosos</h5>
+                        			<h6>13:00h - 18:00h</h6>
+                        			<p class="w3-text-grey">[exposição] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        		</div>
+                        		
+                        		<div id="par-third">
+                        			<h5>Um dia na universidade</h5>
+                        			<h6>13:00h - 18:00h</h6>
+                        			<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        		</div>
+                        		
+                        		<div id="par-third">
+                        			<h5>Mostra sua voz</h5>
+                        			<h6>13:00h - 18:00h</h6>
+                        			<p class="w3-text-grey">[SP] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        		</div>
+                        	</div>
+                        	
+                        	<h5>Encerramento</h5>
+                        	<h6>18:30h - 19:30h</h6>
+                        <p class="w3-text-grey">[premiação] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                    </div> 
+                
+                </div>
             </div>
+        </div>
     </section>
+    
 
     <section id="partner" class="section partner">
         <div class="container">
@@ -638,5 +809,6 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/w3.js"></script>
 </body>
 </html>

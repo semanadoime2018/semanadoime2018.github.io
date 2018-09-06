@@ -1798,3 +1798,14 @@ a {
 a:link { 
 		text-decoration:none; 
 }
+<<<<<<< HEAD:index.css
+=======
+
+/*
+* AGENDA behavior
+*/
+
+.menu {
+    display: none;
+}
+>>>>>>> pr/4:version/assets/css/w3.css
