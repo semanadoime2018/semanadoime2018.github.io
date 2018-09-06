@@ -1704,3 +1704,97 @@ a {
 .w3-border-pale-blue,.w3-hover-border-pale-blue:hover {
   border-color: #e7ffff!important;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 30px;
+		margin: 5%;
+		float: left;
+		overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+		width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+#wrapper {
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#paralelo {
+		margin-bottom: 5%;
+		display: table;
+		border-collapse: separate;
+}
+
+#par-half {
+		display: table-cell;
+    width: 40%;
+		padding: 0px 15px 0px 15px;
+		border-radius: 15px;
+		border: 8px solid rgb(255, 255, 255, 1);
+		background-color: rgb(10, 10, 10, 0.1);
+}
+
+#par-third {
+		display: table-cell;
+    width: 30%;
+		padding: 0px 15px 0px 15px;
+		border-radius: 15px;
+		border: 8px solid rgb(255, 255, 255, 1);
+		background-color: rgb(10, 10, 10, 0.1);
+}
+
+/*
+* FOOTER CONFIG
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+		font-family: 'Alegreya', serif;
+    font-size: 12px;
+		text-transform: uppercase;
+		text-align: left;
+		/*display: table-cell;
+		vertical-align: bottom;*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+a:link { 
+		text-decoration:none; 
+}

@@ -4,11 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <style>
 body, html {
     height: 100%;
-    font-family: "Inconsolata", sans-serif;
+    //font-family: "Inconsolata", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .bgimg {
     background-position: center;
@@ -25,17 +28,23 @@ body, html {
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    <div class="w3-col s2">
+      <a href="#" class="w3-button w3-block w3-black">INÍCIO</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    <div class="w3-col s2">
+      <a href="#about" class="w3-button w3-block w3-black">UM POUCO DO IME</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    <div class="w3-col s2">
+      <a href="#menu" class="w3-button w3-block w3-black">AGENDA</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+		<div class="w3-col s2">
+      <a href="#hackathon" class="w3-button w3-block w3-black">MARATONAS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#where" class="w3-button w3-block w3-black">COMO CHEGAR</a>
+    </div>
+	<div class="w3-col s2">
+      <a href="#get-pass" class="w3-button w3-block w3-amber">INSCREVA-SE</a>
     </div>
   </div>
 </div>
@@ -46,7 +55,7 @@ body, html {
     <span class="w3-text-white" style="font-size:70px"><b>XIII Semana do IME</b></span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">25 a 27 de Outubro de 2018</span>
+    <span class="w3-text-white" style="font-size:30px">25 a 27 de Outubro de 2018</span>
   </div>
 </header>
 
@@ -59,23 +68,205 @@ body, html {
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Bem-vindos!</span></h5>
     <p>A Semana do IME é um tradicional encontro acadêmico do Instituto de Matemática e Estatística da UERJ.</p>
     <p>Esse ano, a já tradicional Semana do IME, em sua décima segunda edição, integrará a Semana Nacional de Ciência e Tecnologia e acontecerá nos dias 25 a 27 de outubro de 2017. Esperamos que seja um evento especial para toda a comunidade científica e para a sociedade. Com este intuito, estão programados minicursos, oficinas, palestras, maratona de programação, maratona de matemática, sessões de painéis de alunos da escola básica, de graduação e de pós-graduação e uma Exposição em colaboração com o Museu Espaço Ciência Viva e com o Colégio Pedro II.</p>
-    <p>Diretor: Geraldo Magela da Silva</p>
-    <p>Vice Diretor: Sergio Luiz Silva</p>
+    
+    <div class="w3-container" id="wrapper">
+			
+		<div class="card">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Logo_uerj.gif" alt="Avatar" class="center">
+			<div class="container">
+				<h4><b>Geraldo Magela da Silva</b></h4> 
+				<p>Diretor do IME</p> 
+			</div>
+		</div>
 
-</p>
-    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
-      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+		<div class="card">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Logo_uerj.gif" alt="Avatar" class="center">
+			<div class="container">
+				<h4><b>Sergio Luiz Silva</b></h4> 
+				<p>Vice Diretor do IME</p> 
+			</div>
+		</div>
+			
     </div>
+
     <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
     <p><strong>Data:</strong> 24 a 27 de Outubro de 2018.</p>
     <p><strong>Endereço:</strong> Rua São Francisco Xavier, 514 - Pavilhão Reitor João Lyra Filho - 6 Andar, Rio de Janeiro - RJ, CEP 20550-900.</p>
+
   </div>
 </div>
 
 <!-- Menu Container -->
 <div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">AGENDA</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'dia-1');" id="myLink">
+        <div class="w3-col s3 tablink">16/10<br>Terça-feira</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'dia-2');">
+        <div class="w3-col s3 tablink">17/10<br>Quarta-feira</div>
+      </a>
+			<a href="javascript:void(0)" onclick="openMenu(event, 'dia-3');">
+        <div class="w3-col s3 tablink">18/10<br>Quinta-feira</div>
+      </a>
+			<a href="javascript:void(0)" onclick="openMenu(event, 'dia-4');">
+        <div class="w3-col s3 tablink">19/10<br>Sexta-feira</div>
+      </a>			
+    </div>
+
+    <div id="dia-1" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Abertura</h5>
+			<h6>9:30h - 10:30h</h6>
+      <p class="w3-text-grey">[palestrantes] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    
+      <h5>Mau uso de Big Data</h5>
+			<h6>10:30h - 11:30h</h6>
+      <p class="w3-text-grey">Media Lab (UFRJ) - [local]<br>[mesa redonda] [descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    
+      <h5>PAUSA PARA ALMOÇO *rever</h5>
+			<h6>11:30h - 12:45h</h6>
+      <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+			
+			<h5>Rodada de negócios</h5>
+			<h6>13:00h - 18:00h</h6>
+			<p class="w3-text-grey">Marinilza - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+    </div>
+
+    <div id="dia-2" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Título da palestra</h5>
+			<h6>9:30h - 10:30h</h6>
+      <p class="w3-text-grey">Vitor Nazário - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    
+      <h5>Difusão da Ciência</h5>
+			<h6>10:30h - 11:30h</h6>
+      <p class="w3-text-grey">Luiz Bevilocqua (UFABC) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    
+      <h5>PAUSA PARA ALMOÇO</h5>
+			<h6>11:30h - 12:45h</h6>
+      <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+			
+			<div id="paralelo">
+				<div id="par-half">
+					<h5>Wikipedia</h5>
+					<h6>13:00h - 14:30h</h6>
+					<p class="w3-text-grey">Rodrigo - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+					
+					<h5>CCOMP</h5>
+					<h6>14:30h - 16:00h</h6>
+					<p class="w3-text-grey">[nome do palestrante] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+					
+					<h5>LANCHE</h5>
+					<h6>16:00h - 16:30h</h6>
+					<p class="w3-text-grey">[local de onde ocorrerá o coffee-break]</p><br>
+					
+					<h5>SP - Gr</h5>
+					<h6>16:30h - 18:00h</h6>
+					<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+				</div>
+				
+				<div id="par-half">
+					<h5>Maratona de Matemática</h5>
+					<h6>13:00h - 18:00h</h6>
+					<p class="w3-text-grey">Raphael - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+				</div>
+			</div>
+			
+			<h5>Índices de Pobreza</h5>
+			<h6>18:30h - 19:30h</h6>
+      <p class="w3-text-grey">Denise Silva (ENCE) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    </div>  
+    
+		<div id="dia-3" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Título da palestra</h5>
+			<h6>9:30h - 10:30h</h6>
+      <p class="w3-text-grey">João Thompson - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    
+      <h5>Título da palestra</h5>
+			<h6>10:30h - 11:30h</h6>
+      <p class="w3-text-grey">Jony (UNICAMP) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    
+      <h5>PAUSA PARA ALMOÇO</h5>
+			<h6>11:30h - 12:45h</h6>
+      <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+			
+			<div id="paralelo">
+				<div id="par-half">
+					<h5>Origami</h5>
+					<h6>13:00h - 14:30h</h6>
+					<p class="w3-text-grey">Passaroni - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+					
+					<h5>Estatística em R</h5>
+					<h6>14:30h - 16:00h</h6>
+					<p class="w3-text-grey">[nome do palestrante] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+					
+					<h5>LANCHE</h5>
+					<h6>16:00h - 16:30h</h6>
+					<p class="w3-text-grey">[local de onde ocorrerá o coffee-break]</p><br>
+					
+					<h5>SP - PG</h5>
+					<h6>16:30h - 18:00h</h6>
+					<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+				</div>
+				
+				<div id="par-half">
+					<h5>Maratona de Programação</h5>
+					<h6>13:00h - 18:00h</h6>
+					<p class="w3-text-grey">Paulo - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+				</div>
+			</div>
+			
+			<h5>Desigualdade de Renda</h5>
+			<h6>18:30h - 19:30h</h6>
+      <p class="w3-text-grey">Pedro Luiz Silva (ENCE) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    </div>  
+		
+		<div id="dia-4" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Sistemas dinâmicos</h5>
+			<h6>9:30h - 10:30h</h6>
+      <p class="w3-text-grey">Nivaldo (ICMC - USP) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    
+      <h5>Projeto de difusão científica</h5>
+			<h6>10:30h - 11:30h</h6>
+      <p class="w3-text-grey">Mellayel (CBPF) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    
+      <h5>PAUSA PARA ALMOÇO *rever</h5>
+			<h6>11:30h - 12:45h</h6>
+      <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+			
+			<div id="paralelo">
+				<div id="par-third">
+					<h5>Ciência para os curiosos</h5>
+					<h6>13:00h - 18:00h</h6>
+					<p class="w3-text-grey">[exposição] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+				</div>
+				
+				<div id="par-third">
+					<h5>Um dia na universidade</h5>
+					<h6>13:00h - 18:00h</h6>
+					<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+				</div>
+				
+				<div id="par-third">
+					<h5>Mostra sua voz</h5>
+					<h6>13:00h - 18:00h</h6>
+					<p class="w3-text-grey">[SP] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+				</div>
+			</div>
+			
+			<h5>Encerramento</h5>
+			<h6>18:30h - 19:30h</h6>
+      <p class="w3-text-grey">[premiação] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+    </div>  
+		
+		<img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>	
+
+<!-- Hackathon Container -->
+<div class="w3-container" id="hackathon">
   <div class="w3-content" style="max-width:700px">
  
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MARATONAS</span></h5>
@@ -129,27 +320,40 @@ body, html {
 <!-- Contact/Area Container -->
 <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>Find us at some address at some place.</p>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">COMO CHEGAR</span></h5>
+    <p>Open map com metrô, ônibus, bike, carro?</p>
     <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
-    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-    </form>
   </div>
 </div>
+
+
+<!-- Ticket Container -->
+<div class="w3-container" id="get-pass">
+  <div class="w3-content" style="max-width:700px">
+		<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INSCREVA-SE</span></h5>
+		<!-- insert sympla widget and google form integrations -->
+	</div>
+</div>
+
 
 <!-- End page content -->
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <div class="row">
+		<div class="column">
+			<p><a href="http://semana2017ime.weebly.com/organizaccedilatildeo.html" target="_blank" class="w3-hover-text-amber">Organização</a></p>
+			<p><a href="http://semana2017ime.weebly.com/fotos.html" target="_blank" class="w3-hover-text-amber">Fotos</a></p>
+			<p><a href="http://semana2017ime.weebly.com" target="_blank" class="w3-hover-text-amber">Eventos passados</a></p>
+		</div>
+		<div class="column">
+			<!--p>Some text..</p-->
+		</div>
+		<div class="column">
+			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-amber">w3.css</a></p>
+		</div>
+	</div>
 </footer>
 
 <!-- Add Google Maps -->
