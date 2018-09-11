@@ -37,7 +37,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 
 ul li {
@@ -624,5 +624,9 @@ ul li {
 }
 
 .ime-history li{
+  font-weight: 300;
+}
+
+.list-neutro li {
   font-weight: 300;
 }
