@@ -643,3 +643,7 @@ ul li {
 #snct ul li {
   font-weight: 300;
 }
+
+#maratonas .img-responsive {
+  object-fit: cover;
+}
