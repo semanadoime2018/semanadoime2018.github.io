@@ -647,3 +647,42 @@ ul li {
 #maratonas .img-responsive {
   object-fit: cover;
 }
+
+.bg-black {
+  background-color: black;
+}
+
+.speaker-details {
+  margin-top: 50px;
+}
+
+.speaker-details figure {
+  margin: 1em 10px;
+}
+
+.speaker-details .panel-footer {
+  overflow: auto;
+}
+
+.speaker-details .panel-footer p {
+  margin: 10px 0px 0px 0px;
+}
+
+@media (max-width : 1000px) {
+  #site-nav .to_dropdown {
+    display: none;
+  }
+}
+
+
+.to_show {
+  display: none;
+}
+
+@media (max-width : 1000px) {
+  #site-nav .to_show {
+    display: block;
+  }
+}
+
+

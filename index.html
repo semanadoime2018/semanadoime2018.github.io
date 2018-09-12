@@ -49,11 +49,19 @@
                     <!-- navigation menu -->
                     <li class="active"><a data-scroll href="#welcome">A Semana do IME</a></li>
                     <li><a data-scroll href="#snct">SNCT</a></li>
-                    <li><a data-scroll href="#speakers">Palestras e Oficinas</a></li>
-                    <li><a data-scroll href="#maratonas">Maratonas</a></li>
+                    <li class="visible-md-block visible-lg-block"><a data-scroll href="#speakers">Palestras e Oficinas</a></li>
+                    <li class="visible-md-block visible-lg-block"><a data-scroll href="#maratonas">Maratonas</a></li>
+                    <li class="visible-md-block visible-lg-block"><a data-scroll href="#paneis">Sessão de Painéis</a></li>
+                    <li class="hidden-md hidden-lg dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Atividades</a>
+                        <ul class="dropdown-menu">
+                          <li><a data-scroll href="#speakers">Palestras e Oficinas</a></li>
+                          <li><a data-scroll href="#maratonas">Maratonas</a></li>
+                          <li><a data-scroll href="#paneis">Sessão de Painéis</a></li>
+                        </ul>
+                    </li>
                     <li><a data-scroll href="#schedule">Agenda</a></li>
                     <li><a data-scroll href="#registration">Inscrições</a></li>
-                    <li><a data-scroll href="#contribution">Submissão</a></li>
                     <li class="dropdown">
                       <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Mais Informações</a>
                         <ul class="dropdown-menu">
@@ -162,33 +170,26 @@
             <div class="row">
                 <div class="col-md-12">
 
-                    <h3 class="section-title">Palestrantes</h3>
+                    <h3 class="section-title">Palestras e Oficinas</h3>
 
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="speaker">
 
                         <figure>
                             <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.jpg">
                         </figure>
 
-                        <h4>Jhon Smith</h4>
+                        <h5>Sobre problemas de coloração em grafos</h5>
 
-                        <p>CEO of Peren</p>
-
-                        <ul class="social-block">
-                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
-                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
-                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
-                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
-                        </ul>
+                        <p>Profa. Diana Sasaki Nóbrega (UERJ)</p>
 
                     </div><!-- /.speaker -->
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="speaker">
 
                         <figure>
@@ -418,31 +419,31 @@
                     </div>
 
                     <div id="dia-1" class="w3-container menu w3-padding-48 w3-card">
-                        <h5>Abertura</h5>
+                      <h5>Abertura</h5>
                     	<h6>9:30h - 10:30h</h6>
-                        <p class="w3-text-grey">[palestrantes] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                      <p class="w3-text-grey">[palestrantes] - [local]</p><br>
 
-                        <h5>Mau uso de Big Data</h5>
+                      <h5>Mau uso de Big Data</h5>
                     	<h6>10:30h - 11:30h</h6>
-                        <p class="w3-text-grey">Media Lab (UFRJ) - [local]<br>[mesa redonda] [descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                      <p class="w3-text-grey">Media Lab (UFRJ) - [local]</p><br>
 
-                        <h5>PAUSA PARA ALMOÇO *rever</h5>
+                      <h5>PAUSA PARA ALMOÇO *rever</h5>
                     	<h6>11:30h - 12:45h</h6>
-                        <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
+                      <p class="w3-text-grey">Participantes do evento poderão utilizar o bandejão...</p><br>
 
                     	<h5>Rodada de negócios</h5>
                     	<h6>13:00h - 18:00h</h6>
-                    	<p class="w3-text-grey">Marinilza - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                    	<p class="w3-text-grey">Marinilza - [local]</p>
                     </div>
 
                     <div id="dia-2" class="w3-container menu w3-padding-48 w3-card">
                         <h5>Título da palestra</h5>
                     	<h6>9:30h - 10:30h</h6>
-                        <p class="w3-text-grey">Vitor Nazário - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">Vitor Nazário - [local]</p><br>
 
                         <h5>Difusão da Ciência</h5>
                     	<h6>10:30h - 11:30h</h6>
-                        <p class="w3-text-grey">Luiz Bevilocqua (UFABC) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">Luiz Bevilocqua (UFABC) - [local]</p><br>
 
                         <h5>PAUSA PARA ALMOÇO</h5>
                     	<h6>11:30h - 12:45h</h6>
@@ -452,11 +453,11 @@
                         		<div id="par-half">
                         			<h5>Wikipedia</h5>
                         			<h6>13:00h - 14:30h</h6>
-                        			<p class="w3-text-grey">Rodrigo - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        			<p class="w3-text-grey">Rodrigo - [local]<br</p><br>
 
                         			<h5>CCOMP</h5>
                         			<h6>14:30h - 16:00h</h6>
-                        			<p class="w3-text-grey">[nome do palestrante] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        			<p class="w3-text-grey">[nome do palestrante] - [local]</p><br>
 
                         			<h5>LANCHE</h5>
                         			<h6>16:00h - 16:30h</h6>
@@ -464,29 +465,29 @@
 
                         			<h5>SP - Gr</h5>
                         			<h6>16:30h - 18:00h</h6>
-                        			<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        			<p class="w3-text-grey">[local]<br</p>
                         		</div>
 
                         		<div id="par-half">
                         			<h5>Maratona de Matemática</h5>
                         			<h6>13:00h - 18:00h</h6>
-                        			<p class="w3-text-grey">Raphael - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        			<p class="w3-text-grey">Raphael - [local]</p>
                         		</div>
                         	</div>
 
                         	<h5>Índices de Pobreza</h5>
                         	<h6>18:30h - 19:30h</h6>
-                        <p class="w3-text-grey">Denise Silva (ENCE) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">Denise Silva (ENCE) - [local]</p><br>
                     </div>
 
             	    <div id="dia-3" class="w3-container menu w3-padding-48 w3-card">
                         <h5>Título da palestra</h5>
                     	<h6>9:30h - 10:30h</h6>
-                        <p class="w3-text-grey">João Thompson - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">João Thompson - [local]</p><br>
 
                         <h5>Título da palestra</h5>
                     	<h6>10:30h - 11:30h</h6>
-                        <p class="w3-text-grey">Jony (UNICAMP) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">Jony (UNICAMP) - [local]</p><br>
 
                         <h5>PAUSA PARA ALMOÇO</h5>
                     	<h6>11:30h - 12:45h</h6>
@@ -496,11 +497,11 @@
                         		<div id="par-half">
                         			<h5>Origami</h5>
                         			<h6>13:00h - 14:30h</h6>
-                        			<p class="w3-text-grey">Passaroni - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        			<p class="w3-text-grey">Passaroni - [local]</p><br>
 
                         			<h5>Estatística em R</h5>
                         			<h6>14:30h - 16:00h</h6>
-                        			<p class="w3-text-grey">[nome do palestrante] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        			<p class="w3-text-grey">[nome do palestrante] - [local]</p><br>
 
                         			<h5>LANCHE</h5>
                         			<h6>16:00h - 16:30h</h6>
@@ -508,29 +509,29 @@
 
                         			<h5>SP - PG</h5>
                         			<h6>16:30h - 18:00h</h6>
-                        			<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        			<p class="w3-text-grey">[local]</p>
                         		</div>
 
                         		<div id="par-half">
                         			<h5>Maratona de Programação</h5>
                         			<h6>13:00h - 18:00h</h6>
-                        			<p class="w3-text-grey">Paulo - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        			<p class="w3-text-grey">Paulo - [local]</p>
                         		</div>
                         	</div>
 
                         	<h5>Desigualdade de Renda</h5>
                         	<h6>18:30h - 19:30h</h6>
-                        <p class="w3-text-grey">Pedro Luiz Silva (ENCE) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">Pedro Luiz Silva (ENCE) - [local]</p><br>
                     </div>
 
             	    <div id="dia-4" class="w3-container menu w3-padding-48 w3-card">
                         <h5>Sistemas dinâmicos</h5>
                     	<h6>9:30h - 10:30h</h6>
-                        <p class="w3-text-grey">Nivaldo (ICMC - USP) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">Nivaldo (ICMC - USP) - [local]<br</p><br>
 
                         <h5>Projeto de difusão científica</h5>
                     	<h6>10:30h - 11:30h</h6>
-                        <p class="w3-text-grey">Mellayel (CBPF) - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">Mellayel (CBPF) - [local]</p><br>
 
                         <h5>PAUSA PARA ALMOÇO *rever</h5>
                     	<h6>11:30h - 12:45h</h6>
@@ -540,25 +541,25 @@
                         		<div id="par-third">
                         			<h5>Ciência para os curiosos</h5>
                         			<h6>13:00h - 18:00h</h6>
-                        			<p class="w3-text-grey">[exposição] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        			<p class="w3-text-grey">[exposição] - [local]</p>
                         		</div>
 
                         		<div id="par-third">
                         			<h5>Um dia na universidade</h5>
                         			<h6>13:00h - 18:00h</h6>
-                        			<p class="w3-text-grey">[local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        			<p class="w3-text-grey">[local]<br</p>
                         		</div>
 
                         		<div id="par-third">
                         			<h5>Mostra sua voz</h5>
                         			<h6>13:00h - 18:00h</h6>
-                        			<p class="w3-text-grey">[SP] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p>
+                        			<p class="w3-text-grey">[SP] - [local]</p>
                         		</div>
                         	</div>
 
                         	<h5>Encerramento</h5>
                         	<h6>18:30h - 19:30h</h6>
-                        <p class="w3-text-grey">[premiação] - [local]<br>[descrição do que vai ser apresentado em 200 caracteres]</p><br>
+                        <p class="w3-text-grey">[premiação] - [local]</p><br>
                     </div>
 
                 </div>
