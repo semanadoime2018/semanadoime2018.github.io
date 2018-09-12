@@ -630,3 +630,12 @@ ul li {
 .list-neutro li {
   font-weight: 300;
 }
+
+#snct .img-responsive {
+  max-height: 170px;
+  padding-bottom: 5px;
+}
+
+#snct ul li {
+  font-weight: 300;
+}
