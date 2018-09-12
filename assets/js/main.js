@@ -13,19 +13,20 @@ $(window).load(function(){
 function handleTopNavAnimation() {
 	var top=$(window).scrollTop();
 
-  console.log($('.logo img').attr('src'));
-
 	if(top>10){
 		$('#site-nav').addClass('navbar-solid'); 
     $('img.logo').addClass('logo-small');
-    $('.logo img').prop('src', $('.logo img').attr('src').replace('assets/images/logo.png', 'assets/images/logo-yellow.png'));
+    if ($('.logo img').attr('src') != undefined) {
+      $('.logo img').prop('src', $('.logo img').attr('src').replace('assets/images/logo.png', 'assets/images/logo-yellow.png'));
+    }
 
 	}
 	else{
 		$('#site-nav').removeClass('navbar-solid'); 
     $('img.logo').removeClass('logo-small');
-    /*$('.logo img').prop('src', '/assets/images/logo.png');*/
-    $('.logo img').prop('src', $('.logo img').attr('src').replace('assets/images/logo-yellow.png', 'assets/images/logo.png'));
+    if ($('.logo img').attr('src') != undefined) {
+      $('.logo img').prop('src', $('.logo img').attr('src').replace('assets/images/logo-yellow.png', 'assets/images/logo.png'));
+    }
 	}
 }
 

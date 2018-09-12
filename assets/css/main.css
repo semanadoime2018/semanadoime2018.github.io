@@ -697,3 +697,8 @@ ul li {
 .navbar-nav > li > a {
   padding-bottom: 5px;
 }
+
+.carousel-inner > .item > img, .carousel-iner > .item > a > img {
+  width: auto;
+  height: 250px;
+}
