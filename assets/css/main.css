@@ -325,8 +325,6 @@ ul li {
 
 .logo-small {
   height: 40px;
-  background-color: grey;
-  border-radius: 10px;
 }
 
 /*
@@ -675,10 +673,6 @@ ul li {
 }
 
 
-.to_show {
-  display: none;
-}
-
 @media (max-width : 1000px) {
   #site-nav .to_show {
     display: block;
@@ -696,6 +690,10 @@ ul li {
   margin: 0px;
 }
 
-.mt-2 {
+.mt-1 {
   margin-top: 1em;
+}
+
+.navbar-nav > li > a {
+  padding-bottom: 5px;
 }
