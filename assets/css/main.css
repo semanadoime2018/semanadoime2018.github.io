@@ -685,4 +685,17 @@ ul li {
   }
 }
 
+.speaker-right {
+  text-align: left;
+}
 
+.speaker-left {
+  text-align: right;
+}
+.speaker figure {
+  margin: 0px;
+}
+
+.mt-2 {
+  margin-top: 1em;
+}
