@@ -701,4 +701,14 @@ ul li {
 .carousel-inner > .item > img, .carousel-iner > .item > a > img {
   width: auto;
   height: 250px;
+  margin: 0 auto;
+}
+
+.carousel {
+  max-width: 1000px;
+}
+
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none
 }
