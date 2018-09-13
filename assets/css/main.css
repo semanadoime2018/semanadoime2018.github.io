@@ -712,3 +712,16 @@ ul li {
 .carousel-control.right {
     background-image: none
 }
+
+.marathon {
+  margin-top: 50px;
+}
+
+.navbar-custom {
+  padding-top: 10px;
+}
+
+.navbar-right > li {
+  padding-top: 10px;
+  padding-bottom: 5px;
+} 
