@@ -648,6 +648,10 @@ ul li {
   object-fit: cover;
 }
 
+#speakers .img-responsive {
+  max-height: 170px;
+}
+
 .bg-black {
   background-color: black;
 }
