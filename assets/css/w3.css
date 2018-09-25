@@ -1814,3 +1814,10 @@ a:link {
   height: 100%;
   position: relative;
 }
+
+.exposicao-odd {
+}
+
+.exposicao-even {
+  background-color: rgba(220, 220, 220, 0.55);
+}
