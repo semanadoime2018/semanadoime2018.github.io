@@ -445,9 +445,11 @@ ul li {
 /*
  * 6.6 Section: Schedule
  */
+.tile{
+  background-color: #f8f8f8;
+}
 .schedule-box {
   position: relative;
-  background-color: #000;
   color: #fff;
   text-align: center;
   padding: 50px 0;
@@ -464,11 +466,8 @@ ul li {
 }
 
 /*
- * 6.7 Section: Schedule
+ * 6.7 Section: Partner
  */
-.partner {
-  background-color: #f8f8f8;
-}
 .partner .partner-box {
   display: block;
   opacity: 1;
@@ -477,35 +476,53 @@ ul li {
           transition: 0.5s all linear;
 }
 
+/* IME-UERJ */
 .partner .partner-box-1 {
   background: url(../images/partner/partner-1.png) no-repeat center center/contain;
   height: 200px;
 }
+/* CP2 */
 .partner .partner-box-2 {
   background: url(../images/partner/partner-2.png) no-repeat center center/contain;
   height: 200px;
 }
+/* MCTIC */
 .partner .partner-box-3 {
-  background: url(../images/partner/partner-3.png) no-repeat center center/contain;
+  background: url(../images/partner/partner-3.jpg) no-repeat center center/contain;
   height: 150px;
 }
+/* SR1 */
 .partner .partner-box-4 {
   background: url(../images/partner/partner-4.png) no-repeat center center/contain;
   height: 150px;
 }
+/* SR2 */
 .partner .partner-box-5 {
   background: url(../images/partner/partner-5.png) no-repeat center center/contain;
   height: 150px;
 }
+/* SR3 */
 .partner .partner-box-6 {
   background: url(../images/partner/partner-6.png) no-repeat center center/contain;
   height: 150px;
 }
+/* default bootstrap */
 .partner .partner-box-7 {
   background: url(../images/partner/partner-7.png) no-repeat center center/contain;
 }
+/* default bootstrap */
 .partner .partner-box-8 {
   background: url(../images/partner/partner-8.png) no-repeat center center/contain;
+}
+/* IBB */
+.partner .partner-box-9 {
+  background: url(../images/partner/partner-9.png) no-repeat center center/contain;
+  height: 180px;
+}
+/* FAPERJ */
+.partner .partner-box-10 {
+  background: url(../images/partner/partner-10.jpg) no-repeat center center/contain;
+  height: 150px;
 }
 
 /*
